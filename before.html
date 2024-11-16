@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISC Lubumbashi | before site</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-image: url('images.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .header h1 {
+            font-size: 4rem;
+            margin: 0;
+        }
+
+        .header p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+
+        .header a {
+            display: inline-block;
+            padding: 10px 30px;
+            background-color: #ff6347;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .header a:hover {
+            background-color: #e5533c;
+        }
+
+        @media screen and (max-width: 768px) {
+            .header h1 {
+                font-size: 3rem;
+            }
+            .header p {
+                font-size: 1.2rem;
+            }
+            .header a {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            .header p {
+                font-size: 1rem;
+            }
+            .header a {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="header-content">
+        <h1>Bienvenue dans le site officiel de ISC Lubumbashi </h1>
+        <p>cliquez ici 👇pour voir le site web .</p>
+        <a href="index.html">website</a>
+    </div>
+</div>
+
+</body>
+</html>
